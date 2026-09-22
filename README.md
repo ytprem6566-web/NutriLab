@@ -1,22 +1,25 @@
-# NutriLab Android V1 Avanzada
+# NutriLab Android V2.0
 
-Android nativo sin WebView. Java + Android Views para minimizar dependencias y facilitar compilación desde Android.
+Aplicación Android nativa de nutrición. Esta versión prioriza una interfaz móvil cuidada y un flujo claro para registrar comidas.
 
-## Compilación desde Android
+## Diseño
+- Inicio tipo dashboard con objetivo calórico, progreso circular y macros.
+- Tarjetas separadas para desayuno, almuerzo, merienda y cena.
+- Acciones rápidas: buscar, foto, voz y manual.
+- Barra inferior de navegación.
+- Paleta propia NutriLab: verde profundo, blanco cálido y superficies suaves.
+- Diseño sin copiar identidad, logotipos, imágenes o código propietario de terceros.
 
-La opción más sencilla es subir este proyecto a GitHub y ejecutar la acción incluida en `.github/workflows/android.yml`. La acción compila `assembleDebug` y publica el APK como artefacto.
-
-También puede abrirse en Android Studio/AndroidIDE con JDK 17 y Android SDK 35.
-
-## Incluye
-- Diario, comidas y macros.
-- Perfil y objetivo calórico.
+## Funciones
 - Registro manual.
-- Open Food Facts por búsqueda y código de barras.
-- Voz con SpeechRecognizer.
-- Texto y foto con Gemini 2.5 Flash.
-- Confirmación antes de agregar.
-- Agua y almacenamiento local.
-- Ajustes para la API de Gemini.
+- Búsqueda Open Food Facts.
+- Código de barras mediante ingreso manual como respaldo.
+- Voz.
+- Foto + Gemini.
+- Texto + Gemini.
+- Perfil y cálculo de objetivo.
+- Agua.
+- Persistencia local.
 
-La clave de Gemini se guarda solo localmente en el teléfono y no debe subirse a GitHub.
+## Compilación
+El workflow `.github/workflows/android.yml` genera `app-debug.apk` con GitHub Actions.
